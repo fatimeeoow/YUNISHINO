@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Así se configuran los colores en Tailwind v4 */
+@theme {
+  --color-ch-lightest: #b8d1e7;
+  --color-ch-lighter: #8fbfec;
+  --color-ch-light: #64a6e3;
+  --color-ch-primary: #3e8fd8;
+  --color-ch-dark: #0960ae;
+  --color-ch-text: #1B1C1E;
+  --color-ch-bg: #f8fafc;
+}
