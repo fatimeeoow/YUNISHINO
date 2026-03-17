@@ -1,13 +1,13 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Editor from './pages/Editor';
 import Library from './pages/Library';
 import Study from './pages/Study';
-import Exam from './pages/Exam'; // <-- 1. AÑADIMOS EL IMPORT
+import Exam from './pages/Exam';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-ch-bg text-ch-text font-sans">
         <main className="max-w-5xl mx-auto p-4 md:p-6">
           <Routes>
@@ -15,10 +15,10 @@ export default function App() {
             <Route path="/editor" element={<Editor />} />
             <Route path="/library" element={<Library />} />
             <Route path="/study" element={<Study />} />
-            <Route path="/exam" element={<Exam />} /> {/* <-- 2. AÑADIMOS LA RUTA */}
+            <Route path="/exam" element={<Exam />} />
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
